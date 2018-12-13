@@ -141,6 +141,7 @@ BMI = mass / height^2 = mass / (height * height).
 4. Print a string to the console containing the variable from step 3. (Something like "Is Mark's BMI higher than John's? true"). 
 */
 
+/*
 var markMass, johnMass, markHeight, johnHeight;
 
 // 1
@@ -163,7 +164,111 @@ isMarkBmiHigher = markBmi > johnBmi;
 
 // 4
 console.log('is Mark BMI higher than John BMI? ' + isMarkBmiHigher);
+*/
+
+/***************
+ * Boolean logic
+ */
+
+var firstName = 'John';
+var age = 20;
+
+if (age < 13) {
+  console.log(firstName + ' is a boy.');
+} else if (age >= 13 && age < 20) {
+  console.log(firstName + ' is a teenager.');
+} else if (age >= 20 && age < 30) {
+  console.log(firstName + ' is a young man.');
+} else { 
+  console.log(firstName + ' is a man.');
+}
 
 
+/********************
+ * The Ternary Operator and Switch Statements
+ */
+
+ var firstName = 'John';
+ var age = 14;
+
+ // Ternary operator
+ age >= 18 ? console.log(firstName + ' drinks beer.') : console.log(firstName + ' drinks juice');
+
+ 
+var drink = age >= 18 ? 'beer' : 'juice'; 
+console.log(drink);
 
 
+if (age >= 18) {
+  var drink = 'beer';
+} else {
+  var drink = 'juice';
+}
+
+// Switch statement
+var job = 'instructor';
+switch (job) {
+  case 'teacher':
+  case 'instructor':
+    console.log(firstName + ' teaches kids how to code.');
+    break;
+  case 'driver':
+    console.log(firstName + 'drives an uber in lisbon.');
+    break;
+  case 'designer':
+    console.log(firstName + ' designs beautiful websites.');
+    break;
+  default:
+    console.log(firstName + ' doing something else.');
+}
+
+age = 56;
+switch (true) {
+  case age < 13:
+    console.log(firstName + ' is a boy.');
+    break;
+  case age >= 13 && age < 20:
+    console.log(firstName + 'is a teenager.');
+    break;
+  case age >=20 && age < 30:
+    console.log(firstName + 'is a young man.');
+    break;
+  default:
+    console.log(firstName + ' is a man.');
+}
+
+var height;
+
+height = 23;
+
+/*
+if (height || height === 0) {
+  console.log('Variable is defined');
+} else {
+  console.log('Variable has NOT been defined');
+}
+*/
+
+
+// Equality operators
+if (height === '23') {
+  console.log('The ==== operator does type coercion!'); 
+}
+
+// Coding challange 2
+
+var avgJohnTeam, avgMikeTeam;
+
+avgJohnTeam = (10 + 10 + 10)/3;
+avgMikeTeam = (20 + 0 + 10)/3;
+
+console.log('Avegare John Team: ' + avgJohnTeam);
+console.log('Avegare Mike Team: ' + avgMikeTeam);
+
+if (avgJohnTeam > avgMikeTeam) {
+  console.log('John Team have Win');
+} else if (avgJohnTeam === avgMikeTeam){
+  console.log('Draw');
+} else {
+  console.log('Mike Team Won');
+}
