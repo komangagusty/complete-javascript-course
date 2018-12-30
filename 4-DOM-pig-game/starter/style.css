@@ -2,6 +2,8 @@
 *** GENERAL
 **********************************************/
 
+
+
 * {
     margin: 0;
     padding: 0;
@@ -13,6 +15,14 @@
     content: "";
     display: table;
     clear: both;
+}
+
+#dice-1 {
+    top: 120px;
+}
+
+#dice-2 {
+    top: 250px;
 }
 
 body {

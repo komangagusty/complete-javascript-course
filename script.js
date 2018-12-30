@@ -392,7 +392,7 @@ console.log(tips, finalValues);
  * Object and Methods
  */
 
-/*
+
 
 var john = {
   firstName: 'John',
@@ -409,7 +409,7 @@ var john = {
 john.calcAge();
 console.log(john);
 
-*/
+
 
 // Coding challange 4
 
